@@ -34,6 +34,11 @@ img {
     border: none;
 
     background-color: rgba(255,255,255,.96);
+   	-webkit-backface-visibility: hidden;
+}
+
+.navbar-modal-showing {
+	-webkit-backface-visibility: visible;
 }
 
 .nav li a {
@@ -53,10 +58,10 @@ img {
 	}
 
 	.nav li a {
-		-webkit-transition:all .2s ease-in-out; 
-		-moz-transition:all .2s ease-in-out; 
-		-o-transition:all .2s ease-in-out; 
-		transition:all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out; 
+		-moz-transition: all .2s ease-in-out; 
+		-o-transition: all .2s ease-in-out; 
+		transition: all .2s ease-in-out;
 	    padding-bottom: 11px;
 	    /*border-top: 4px solid white;*/
 	    border-bottom: 4px solid #f8f8f8;
@@ -67,21 +72,21 @@ img {
 		border-bottom-radius: 20px;
 	}
 
+	.navbar-nav li a {
+		line-height: 40px;
+	}
 }
 
 .navbar-brand {
-	font-weight: 1200;
+	padding: 0;
+	height: 70px;
 }
 
 .navbar-toggle {
 	padding: 2px 5px;
 }
 
-.navbar-collapse {
-	max-height: 100%;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.nav li a {
 		padding: 20px;
 		text-align: center;
@@ -101,22 +106,44 @@ img {
 	.navbar-nav {
 		margin: 0px -15px;
 	}
+
+	.navbar-collapse {
+		max-height: none;
+	}
 }
 
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, 0%);
-  -ms-transform: translate(0, 0%);
-  transform: translate(0, 0%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+@media (min-width: 768px) {
+	.navbar-right .dropdown-menu {
+		right: auto;
+		padding: 0px 0px;
+	}
+
+	.dropdown-menu li a {
+		border-bottom: none;
+		padding: 10px 20px;
+		line-height: 20px;
+		-webkit-transition: all .05s ease-in-out; 
+		-moz-transition: all .05s ease-in-out; 
+		-o-transition: all .05s ease-in-out; 
+		transition: all .05s ease-in-out;
+	}
+
+	.dropdown-menu li a:hover {
+		background-color: #a2becc;
+	}
+
+	.navbar-default .navbar-collapse {
+		padding-right: 40px;
+	}
 }
 
 /* About CSS */
 .welcome-div {
 	height: 100vh;
-	background: url(img/MN_Skyline_blur_even_smaller.jpg) no-repeat 50% 50%;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -124,6 +151,8 @@ img {
   	background-color: black;
   	background-attachment: fixed;
   	transition: opacity 0.5s;
+
+  	text-shadow: 0 1px 0 black;
 }
 
 .textbox-inner {
@@ -132,6 +161,9 @@ img {
 	text-align: center;
 }
 
+.textbox-inner a {
+	background-color: transparent;
+}
 @media (max-width: 768px) {
 	.textbox-inner {
 		top: 15%;
@@ -152,14 +184,13 @@ img {
 	}
 
 	.textbox-inner h1 {
-		font-size: 72px;
+		font-size: 48px;
+		margin-bottom: 20px;
 	}
 
 	.textbox-inner p {
 		font-size: 18px;
 	}
-
-
 }
 
 .textbox-inner h1 {
@@ -182,6 +213,15 @@ img {
 
 .logo {
 	height: 100%;
+	display: inline-block !important;
+}
+
+.logo-text {
+	font-size: 14px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: inline-block;
 }
 
 /*
@@ -508,23 +548,16 @@ footer {
 	background-color: #333;
 	color: white;
 	padding: 40px 0 0;
-	text-align: center;
+	text-align: left;
 }
 
 footer h4 {
-	text-decoration: underline;
+	
 	font-weight: bold;
 }
 
-#footer-left p {
-	/*width: 50%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;*/
-
-}
-#footer-right {
-	/*text-align: center;*/
+#footer-mid p{
+	margin: 0;
 }
 
 #footer-row {
@@ -546,6 +579,27 @@ footer h4 {
 // Modal CSS
 //
 */
+/* Override default modal animations */
+.modal.fade .modal-dialog {
+    opacity: 0;
+
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2 linear;
+    transition: opacity .2s linear;
+
+    -webkit-transform: translate(0, 0);
+    	-ms-transform: translate(0, 0); // IE9 only
+   		transform: (0, 0);
+
+}
+
+.modal.in .modal-dialog {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    	-ms-transform: translate(0, 0); // IE9 only
+   		transform: (0, 0);
+}
+
 .modal-header {
 	text-align: center;
 	font-weight: bold;
@@ -627,6 +681,165 @@ footer h4 {
 
 .modal-body h3{
 	text-transform: uppercase;
+}
+
+/*
+//
+// Practice Area CSS
+//
+*/
+.practice-intro {
+	height: 100vh;
+	background: url(img/sunset.jpg) no-repeat 50% 50%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	text-align: center;
+  	position: relative;
+}
+
+.practice-intro .row {
+	position: relative;
+	top: 60%;
+}
+
+.practice-intro h1{
+	font-size: 72px;
+	position: relative;
+	top:35%;
+	color: white;
+	text-shadow: 0 2px 1px #666;
+	text-transform: uppercase;
+
+}
+
+.practice-intro--img {
+	width: 50%;
+	height: 50%;
+
+	opacity: .6;
+	-webkit-transition:	all .1s ease-in-out; 
+	   -moz-transition:	all .1s ease-in-out; 
+		 -o-transition:	all .1s ease-in-out; 
+		    transition:	all .1s ease-in-out;
+}
+
+@media (max-width: 991px) {
+	.practice-intro--img {
+		display: none;
+	}
+
+	.practice-intro h1 {
+		font-size: 36px;
+		top: 20%;
+	}
+
+	.practice-intro .row {
+		top: 25%;
+	}
+}
+.practice-intro a:hover .practice-intro--img{
+	opacity: 1;
+}
+
+.practice-intro a:hover .practice-link {
+	opacity: 1;
+}
+
+.practice-intro a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.practice-link {
+	color: white;
+	opacity: .6;
+	-webkit-transition:	all .1s ease-in-out; 
+	   -moz-transition:	all .1s ease-in-out; 
+		 -o-transition:	all .1s ease-in-out; 
+		    transition:	all .1s ease-in-out;
+}
+
+.practice-link a {
+	text-decoration: none;
+	font-size: 24px;
+	color:white;
+	width: 100% / 5;
+}
+
+.practice-area {
+	width: 100%;
+	display: inline-block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.practice-row {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.practice-row h1 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.practice-row p {
+	font-size: 18px;
+}
+
+.practice-row img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.practice-area p {
+	font-size: 18px;
+}
+
+.practice-area h1 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.practice-area img {
+	width: 18%;
+	height: 100%;
+	vertical-align: middle
+	
+}
+
+@media (max-width: 991px) {
+	.practice-row h1 {
+		text-align: center;
+	}
+
+	.practice-row p {
+		text-align: center;
+	}
+	.practice-row img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.practice-area .text-left {
+	width: 80%;
+	text-align: left;
+	
+}
+
+.practice-area .text-right {
+	
+	text-align: left;
+	
 }
 
 /*

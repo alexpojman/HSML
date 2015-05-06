@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<!-- Header Section -->
-		<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+		<nav role="navigation" class="navbar navbar-default navbar-fixed-top" id="navbar">
 		    <div class="container">
 		        <!-- Brand and toggle get grouped for better mobile display -->
 		        <div class="navbar-header">
@@ -33,6 +33,7 @@
 		            <ul class="nav navbar-nav navbar-right">
 		                <li><a href="/HSML_Redesign_2015/">About</a></li>
 		                <li class="active"><a href="/HSML_Redesign_2015/professionals">Professionals</a></li>
+		                <li><a class="animsition-link" href="/HSML_Redesign_2015/practices">Practice Areas</a></li>
 		                <li><a href="/HSML_Redesign_2015/contact">Contact</a></li>
 		                <li><a href="/HSML_Redesign_2015/blog">Blog</a></li>
 		            </ul>
@@ -51,7 +52,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/hamre_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/hamre_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:chamre@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/hamre.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -67,7 +68,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/schumann_edit.jpg" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/schumann_edit.jpg" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:mschumann@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/schumann.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>										
@@ -83,7 +84,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/mueller_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/mueller_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:dmueller@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/mueller.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -99,7 +100,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/larson_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/larson_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:jlarson@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/larson.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -118,7 +119,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/wong_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/wong_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:bwong@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/wong.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -130,13 +131,11 @@
 								<p class="prof-description">Mr. Wong practices general Intellectual Property Law with an emphasis on patents. Particularly, he focuses on matters involving patent procurement, infringement investigation, and patentability study.</p>
 							</div>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/yang_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/yang_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:ryang@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/yang.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -144,7 +143,7 @@
 									</div>
 								</div>
 								<h3 class="prof-name">Rong (Christine) Yang</h3>
-								<h4 class="prof-title>">Patent Attorney</h4>
+								<h4 class="prof-title>">Partner</h4>
 								<p class="prof-description">Cras consequat nulla felis, ut feugiat neque vulputate at. Integer a lorem vitae ex porttitor porta sit amet id nisl. Sed vitae tellus in velit mollis condimentum quis et dui. Suspendisse facilisis maximus metus et ullamcorper.</p>
 								<h5 class="prof-language">Languages: <strong>Mandarin</strong></h5>
 							</div>
@@ -153,24 +152,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/kim_edit.png" class="prof-photo lazy">
-										<div class="prof-contact">
-											<a href="#" data-email="mailto:akim@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
-											<a data-toggle="modal" href="bios/kim.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
-										</div>
-									</div>	
-								</div>
-								<h3 class="prof-name">Alexander J. Kim</h3>
-								<h4 class="prof-title>">Patent Attorney</h4>
-								<p class="prof-description">Mr. Kim focuses on matters involving U.S. patent prosecution and counseling clients on international patent matters.</p>
-								<h5 class="prof-language">Languages: <strong>Korean</strong></h5>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="prof">
-								<div class="photo-frame-wrapper">
-									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/kavathekar_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/kavathekar_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:akavathekar@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/kavathekar.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -178,7 +160,7 @@
 									</div>
 								</div>
 								<h3 class="prof-name">Amol H. Kavathekar</h3>
-								<h4 class="prof-title>">Patent Attorney</h4>
+								<h4 class="prof-title>">Partner</h4>
 								<p class="prof-description">Cras consequat nulla felis, ut feugiat neque vulputate at. Integer a lorem vitae ex porttitor porta sit amet id nisl. Sed vitae tellus in velit mollis condimentum quis et dui. Suspendisse facilisis maximus metus et ullamcorper.</p>
 							</div>
 						</div>
@@ -186,7 +168,26 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/maruta_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/kim_edit.png" class="prof-photo ">
+										<div class="prof-contact">
+											<a href="#" data-email="mailto:akim@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
+											<a data-toggle="modal" href="bios/kim.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
+										</div>
+									</div>	
+								</div>
+								<h3 class="prof-name">Alexander J. Kim</h3>
+								<h4 class="prof-title>">Partner</h4>
+								<p class="prof-description">Mr. Kim focuses on matters involving U.S. patent prosecution and counseling clients on international patent matters.</p>
+								<h5 class="prof-language">Languages: <strong>Korean</strong></h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 grid-item">
+							<div class="prof">
+								<div class="photo-frame-wrapper">
+									<div class="prof-photoframe">
+										<img data-src="../css/img/professionals/maruta_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:ymaruta@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/maruta.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -199,13 +200,11 @@
 								<h5 class="prof-language">Languages: <strong>Japanese</strong></h5>
 							</div>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/yoshida_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/yoshida_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:myoshida@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/yoshida.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -215,14 +214,14 @@
 								<h3 class="prof-name">Masako Yoshida</h3>
 								<h4 class="prof-title>">Patent Attorney</h4>
 								<p class="prof-description">Cras consequat nulla felis, ut feugiat neque vulputate at. Integer a lorem vitae ex porttitor porta sit amet id nisl. Sed vitae tellus in velit mollis condimentum quis et dui. Suspendisse facilisis maximus metus et ullamcorper.</p>
-								<h5 class="prof-language">Languages: <strong>Japanese | German</strong></h5>
+								<h5 class="prof-language">Languages: <strong>Japanese &amp; German</strong></h5>
 							</div>
 						</div>
 						<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/voeller_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/voeller_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:svoeller@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/voeller.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -238,7 +237,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/beha_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/beha_edit_2.jpg" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:rbeha@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/beha.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -251,11 +250,13 @@
 								<h5 class="prof-language">Languages: </br><strong>German, Mandarin &amp; French</strong></h5>
 							</div>
 						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/ryan_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/ryan_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:sryan@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/ryan.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -267,13 +268,11 @@
 								<p class="prof-description">Sandra Epp Ryan’s practice involves a wide range of intellectual property matters with an emphasis on trademark counseling, prosecution and enforcement, and global portfolio development and management.</p>
 							</div>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/fu_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/fu_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:hfu@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/fu.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -290,7 +289,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/sharp_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/sharp_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:rsharp@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/sharp.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -306,7 +305,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/wu_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/wu_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:ywu@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/wu.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -319,11 +318,13 @@
 								<h5 class="prof-language">Languages: <strong>Mandarin</strong></h5>
 							</div>
 						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/lu_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/lu_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:ulu@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/lu.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -335,14 +336,12 @@
 								<p class="prof-description">Dr. Lu practices general intellectual property law with an emphasis on patents.  Dr. Lu focuses on matters involving patent procurement, infringement, due diligence, and patentability study.  Dr. Lu prosecutes domestic and international patents in the areas of electrical engineering, biomedical sciences, biomedical engineering, mechanical engineering, and software.</p>
 								<h5 class="prof-language">Languages: <strong>Mandarin</strong></h5>
 							</div>
-						</div>					
-					</div>
-					<div class="row">
-						<div class="col-md-3 grid-item">
+						</div>
+												<div class="col-md-3 grid-item">
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/kurose_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/kurose_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:mkurose@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/kurose.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -359,7 +358,7 @@
 							<div class="prof">
 								<div class="photo-frame-wrapper">
 									<div class="prof-photoframe">
-										<img data-original="../css/img/professionals/lee_edit.png" class="prof-photo lazy">
+										<img data-src="../css/img/professionals/lee_edit.png" class="prof-photo ">
 										<div class="prof-contact">
 											<a href="#" data-email="mailto:glee@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="prof-contact-item prof-contact_item--email"></a>
 											<a data-toggle="modal" href="bios/lee.html" data-target="#professionalModal" class="prof-contact-item prof-contact_item--info"></a>
@@ -371,7 +370,7 @@
 								<p class="prof-description">Ms. Lee assists the firms' attorneys in domestic and international patent prosecution matters, and assists with various IP issues related to Korea.  Ms. Lee’s prosecution expertise is in the areas of electrical and material engineering.</p>
 								<h5 class="prof-language">Languages: <strong>Korean & Japanese</strong></h5>
 							</div>
-						</div>																			
+						</div>				
 					</div>			
 				</div>
 			</div>
@@ -386,45 +385,13 @@
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
-									<a href="#" data-email="mailto:ycottle@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553807" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Yanling Cottle</h3>
-								<h4 class="prof-title>">Legal Assistant</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:gdahl@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553817" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Gina Dahl</h3>
-								<h4 class="prof-title>">Legal Assistant</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
 									<a href="#" data-email="mailto:adoyle@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
 									<a href="tel:16124553827" class="prof-contact-item staff-contact_item--phone"></a>
 								</div>
 								<h3 class="prof-name">Amy Doyle</h3>
 								<h4 class="prof-title>">Paralegal</h4>
 							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:lgad@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553800" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Lois Gad</h3>
-								<h4 class="prof-title>">Office Assistant</h4>
-							</div>
 						</div>															
-					</div>
-					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
@@ -435,16 +402,6 @@
 								<h4 class="prof-title>">Paralegal</h4>
 							</div>
 						</div>						
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:mjachim@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553828" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Megan Jachim</h3>
-								<h4 class="prof-title>">Legal Assistant</h4>
-							</div>
-						</div>
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
@@ -466,17 +423,7 @@
 							</div>
 						</div>													
 					</div>
-					<div class="row">
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:clyrek@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553819" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Carrie Lyrek</h3>
-								<h4 class="prof-title>">Legal Assitant</h4>
-							</div>
-						</div>						
+					<div class="row">					
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
@@ -486,49 +433,7 @@
 								<h3 class="prof-name">Heidi McCarty</h3>
 								<h4 class="prof-title>">Paralegal</h4>
 							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:tpojman@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553820" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Teresa Pojman</h3>
-								<h4 class="prof-title>">IT Administrator</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:lramsey@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553834" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Linda Ramsey</h3>
-								<h4 class="prof-title>">Business Manager</h4>
-							</div>
-						</div>
-					</div>
-					<div class="row">	
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:yrasinski@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553825" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Yilan Rasinski</h3>
-								<h4 class="prof-title>">Staff Accountant</h4>
-							</div>
 						</div>	
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:rrobinson@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553847" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Rosanne Robinson</h3>
-								<h4 class="prof-title>">Office Assistant</h4>
-							</div>
-						</div>
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
@@ -542,48 +447,6 @@
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
-									<a href="#" data-email="mailto:jsilbaugh@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124550393" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Joel Silbaugh</h3>
-								<h4 class="prof-title>">Docketing Assistant</h4>
-							</div>
-						</div>
-					</div>
-					<div class="row">	
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:asloan@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553832" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Amy Sloan</h3>
-								<h4 class="prof-title>">Legal Assistant</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:rtabor@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553812" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Raquel Tabor</h3>
-								<h4 class="prof-title">Docketing/Annuities Mgr.</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:etinker@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553810" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Elaine Tinker</h3>
-								<h4 class="prof-title>">H.R. Administrator/Accounting</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
 									<a href="#" data-email="mailto:rthrumston@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
 									<a href="tel:16124553567" class="prof-contact-item staff-contact_item--phone"></a>
 								</div>
@@ -591,39 +454,15 @@
 								<h4 class="prof-title>">Paralegal</h4>
 							</div>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-md-3 grid-item">
 							<div class="staff">
 								<div class="staff-contact">
-									<a href="#" data-email="mailto:pwheeler@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553837" class="prof-contact-item staff-contact_item--phone"></a>
+									<a href="#" data-email="mailto:accounting@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
 								</div>
-								<h3 class="prof-name">Philip Wheeler</h3>
-								<h4 class="prof-title>">Docketing Assistant</h4>
+								<h3 class="prof-name">Accounting/Business Office</h3>
 							</div>
 						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:rxu@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553835" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Ruohong Xu</h3>
-								<h4 class="prof-title>">Senior Staff Accountant</h4>
-							</div>
-						</div>
-						<div class="col-md-3 grid-item">
-							<div class="staff">
-								<div class="staff-contact">
-									<a href="#" data-email="mailto:mzamorano@hsml.com" data-toggle="modal" data-target="#disclaimerModal" class="staff-contact-item staff-contact_item--email"></a>
-									<a href="tel:16124553830" class="prof-contact-item staff-contact_item--phone"></a>
-								</div>
-								<h3 class="prof-name">Maria Zamorano</h3>
-								<h4 class="prof-title>">Legal Assistant</h4>
-							</div>
-						</div>																									
-					</div>								
+					</div>							
 				</div>
 			</div>
 
@@ -654,15 +493,35 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12" id="copyright">
-							<img id="footer-logo" src="../css/img/logo.png"/>
-							<h6>Copyright &copy 2015 by HSML, P.C. All rights Reserved. </br>HSML and the HSML Logo are service marks of HSML, P.C.
-							</h6>
+							<h6>Copyright &copy 2015 by HSML, P.C. All rights Reserved.</h6>
+							<h6>HSML and the HSML Logo are service marks of HSML, P.C.</h6>
+							<a href="#termsModal" data-toggle="modal"><h6>Terms of Use</h6></a>
+
 						</div>
 					</div>
 				</div>
 			</footer>
-		</div>
-		<!-- Disclaimer -->
+		</div>	
+
+		<!-- Terms of Service Modal -->
+		<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModal" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+			        <div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			          	<h4 class="modal-title">TERMS OF USE</h4>
+			        </div>
+			        <div class="modal-body">
+			        	<p>Any contact through this website or via e-mail does not create an attorney-client relationship. All information, links and articles posted on this website is to provide general information to the user and should not be regarded as legal advice. Accordingly, HSML does not necessarily endorse or sponsor the materials appearing on this website or on linked sites.</p>
+			        </div>
+			        <div class="modal-footer">
+			          	<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			        </div>
+			    </div><!-- /.modal-content -->
+		    </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<!-- Disclaimer Modal -->
 		<div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModal" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -693,7 +552,7 @@
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<script src="../js/printElement.js"></script>
 		<script src="../js/custom.js"></script>
-		<script src="../js/jquery.lazyload.min.js" type="text/javascript"></script>
+		<script src="../js/jquery.unveil.js" type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
 	</body>
 </html> 
